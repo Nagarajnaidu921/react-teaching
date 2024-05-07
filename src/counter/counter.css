@@ -1,0 +1,11 @@
+.btn {
+    border: none;
+}
+
+.primary {
+    color: red;
+    font-size: 3rem;
+}
+.secondary {
+    color: red;
+}
