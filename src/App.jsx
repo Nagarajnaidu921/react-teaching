@@ -1,6 +1,5 @@
-import {  useReducer } from "react";
 import "./App.css";
-import { storeReducer } from "./reducers/stock";
+import UseStateAndUseReducer from "./components/use-stateand-user-reduce";
 
 /**
  * 
@@ -12,77 +11,9 @@ import { storeReducer } from "./reducers/stock";
 
 
 function App() {
-  const [stock, dispatchStock] = useReducer(storeReducer, {
-    book: 10,
-    pen: 10,
-  })
-
-  return (
-    <div>
-      <div>
-        <span>Book:</span>
-        <span>{stock.book}</span>
-      </div>
-      <div>
-        <span>Pen:</span>
-        <span>{stock.pen}</span>
-      </div>
-      <div>
-        <span>
-          <button
-            onClick={() => {
-              dispatchStock({
-                type: 'SELL',
-                item: 'book'
-              })
-            }}
-          >
-            Sell Book(1)
-          </button>
-        </span>
-        <span>
-          <button
-            className="pen-btn"
-            onClick={() => {
-              dispatchStock({
-                type: 'SELL',
-                item: 'pen'
-              })
-            }}
-          >
-            Sell Pen(1)
-          </button>
-        </span>
-      </div>
-      <div>
-        <span>
-          <button
-            onClick={() => {
-              dispatchStock({
-                type: 'BUY',
-                item: 'book'
-              })
-            }}
-          >
-            Buy Book(1)
-          </button>
-        </span>
-        <span>
-          <button
-            className="pen-btn"
-            onClick={() => {
-              dispatchStock({
-                type: 'BUY',
-                item: 'pen'
-              })
-            }}
-          >
-            BUY Pen(1)
-          </button>
-        </span>
-      </div>
-    </div>
-  );
+  return <div >
+    <UseStateAndUseReducer></UseStateAndUseReducer>
+  </div>
 }
 
 export default App;
