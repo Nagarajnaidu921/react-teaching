@@ -1,4 +1,7 @@
 import "./App.css";
+import { ConditionalRenderingExample } from "./components/consditional-statement";
+import { ListAndLoopExample } from "./components/list-and-loops";
+import { ListView } from "./components/list-view";
 import UseStateAndUseReducer from "./components/use-stateand-user-reduce";
 
 /**
@@ -12,7 +15,10 @@ import UseStateAndUseReducer from "./components/use-stateand-user-reduce";
 
 function App() {
   return <div >
-    <UseStateAndUseReducer></UseStateAndUseReducer>
+    {/* <UseStateAndUseReducer></UseStateAndUseReducer> */}
+    {/* <ListView></ListView> */}
+    {/* <ConditionalRenderingExample></ConditionalRenderingExample> */}
+    <ListAndLoopExample></ListAndLoopExample>
   </div>
 }
 

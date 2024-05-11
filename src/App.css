@@ -5,7 +5,7 @@
   background-color: teal;
 }
 
-.store-container {
+.store-container, .difference {
   width: 70vw;
   display: flex;
   justify-content: space-between;
