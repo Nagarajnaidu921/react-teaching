@@ -3,6 +3,9 @@ import { ConditionalRenderingExample } from "./components/consditional-statement
 import { ListAndLoopExample } from "./components/list-and-loops";
 import { ListView } from "./components/list-view";
 import UseStateAndUseReducer from "./components/use-stateand-user-reduce";
+import { UseCallbackExample } from "./components/useCallBack";
+import { UseEffectExample } from "./components/useEffect";
+import UseMemoExample from './components/useMemo'
 
 /**
  * 
@@ -18,7 +21,10 @@ function App() {
     {/* <UseStateAndUseReducer></UseStateAndUseReducer> */}
     {/* <ListView></ListView> */}
     {/* <ConditionalRenderingExample></ConditionalRenderingExample> */}
-    <ListAndLoopExample></ListAndLoopExample>
+    {/* <ListAndLoopExample></ListAndLoopExample> */}
+    {/* <UseEffectExample></UseEffectExample> */}
+    {/* <UseMemoExample></UseMemoExample> */}
+    <UseCallbackExample></UseCallbackExample>
   </div>
 }
 
