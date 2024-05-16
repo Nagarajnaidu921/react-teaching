@@ -6,6 +6,7 @@ import UseStateAndUseReducer from "./components/use-stateand-user-reduce";
 import { UseCallbackExample } from "./components/useCallBack";
 import { UseEffectExample } from "./components/useEffect";
 import UseMemoExample from './components/useMemo'
+import { UseRefExample, UseRefExampleDomMenuplation, ForwardRefExample } from "./components/useRef";
 
 /**
  * 
@@ -24,7 +25,10 @@ function App() {
     {/* <ListAndLoopExample></ListAndLoopExample> */}
     {/* <UseEffectExample></UseEffectExample> */}
     {/* <UseMemoExample></UseMemoExample> */}
-    <UseCallbackExample></UseCallbackExample>
+    {/* <UseCallbackExample></UseCallbackExample> */}
+    {/* <UseRefExample></UseRefExample> */}
+    {/* <UseRefExampleDomMenuplation></UseRefExampleDomMenuplation> */}
+    <ForwardRefExample></ForwardRefExample>
   </div>
 }
 
